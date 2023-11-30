@@ -1,2 +1,1 @@
-# tpz_warehouses
-TPZ-CORE Warehouses
+# TPZ-CORE Warehouses
