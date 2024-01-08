@@ -127,7 +127,7 @@ Citizen.CreateThread(function()
                                         buttonparam2 = "DECLINE"
                                     }
                                     
-                                    TriggerEvent("tp_inputs:getTextInput", inputData, function(cb)
+                                    TriggerEvent("tpz_inputs:getTextInput", inputData, function(cb)
 
                                         local inputId = tonumber(cb)
     
@@ -177,7 +177,7 @@ Citizen.CreateThread(function()
                                         buttonparam2 = "DECLINE"
                                     }
                                 
-                                    TriggerEvent("tp_inputs:getButtonInput", inputData, function(cb)
+                                    TriggerEvent("tpz_inputs:getButtonInput", inputData, function(cb)
     
                                         if cb == "ACCEPT" then
                                             TriggerServerEvent("tpz_warehouses:createWarehouseKeys", index, ClientData.currentId)
@@ -195,7 +195,7 @@ Citizen.CreateThread(function()
                                         buttonparam2 = "DECLINE"
                                     }
 
-                                    TriggerEvent("tp_inputs:getButtonInput", inputData, function(cb)
+                                    TriggerEvent("tpz_inputs:getButtonInput", inputData, function(cb)
                                         if cb == "ACCEPT" then
 
                                             TriggerServerEvent("tpz_warehouses:sellWarehouse", index, warehouseConfig.Title, ClientData.currentId, warehouseConfig.Price)
@@ -217,7 +217,7 @@ Citizen.CreateThread(function()
                                         buttonparam2 = "DECLINE"
                                     }
     
-                                    TriggerEvent("tp_inputs:getButtonInput", inputData, function(cb)
+                                    TriggerEvent("tpz_inputs:getButtonInput", inputData, function(cb)
     
                                         if cb == "ACCEPT" then
  
@@ -238,7 +238,7 @@ Citizen.CreateThread(function()
                                         buttonparam2 = "DECLINE"
                                     }
     
-                                    TriggerEvent("tp_inputs:getButtonInput", inputData, function(cb)
+                                    TriggerEvent("tpz_inputs:getButtonInput", inputData, function(cb)
     
                                         if cb == "ACCEPT" then
 
