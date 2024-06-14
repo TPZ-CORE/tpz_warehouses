@@ -53,6 +53,7 @@ AddEventHandler("tpz_warehouses:buyWarehouse", function(warehouse, title, cost, 
   
       TriggerClientEvent("tpz_core:sendRightTipNotification", _source, "~q~You successfully bought " .. title .. " for ~o~$" ..cost .. " dollars.", 3000)
 
+      Wait(1500)
       TriggerEvent("tpz_inventory:registerContainerInventory", warehouse .. "_" .. containerName, weight) -- Register the new container on tpz_inventory.
 
     else
@@ -71,7 +72,8 @@ AddEventHandler("tpz_warehouses:buyWarehouse", function(warehouse, title, cost, 
       exports.ghmattimysql:execute("INSERT INTO `containers` ( `name`, `weight`) VALUES ( @name, @weight)", Parameters)
   
       TriggerClientEvent("tpz_core:sendRightTipNotification", _source, "~q~You successfully bought " .. title .. " for ~o~(G) " ..cost .. " Gold.", 3000)
-
+     
+      Wait(1500)
       TriggerEvent("tpz_inventory:registerContainerInventory", warehouse .. "_" .. containerName, weight) -- Register the new container on tpz_inventory.
 
     else
